@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>My App</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+	<div class="container form">
+		<form>
+			<div class="icon-row">
+				<span class="glyphicon glyphicon-link"></span>
+				<span class="glyphicon glyphicon-phone"></span>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Name</label>
+						<input class="form-control" type="text">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Url</label>
+						<div class="input-group">
+							<input class="form-control" type="text">
+							<a href="" class="input-addon" data-toggle="tooltip" title="Go to url">GO</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label>Page Content</label>
+						<ul class="tabs">
+							<li class="tab">Edit</li>
+							<li class="tab">Preview</li>
+						</ul>
+						<textarea type="text" class="form-control" rows="8"></textarea>
+					</div>
+				</div>
+			</div>
+			<h3>SEO</h3>
+			<hr>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label>Meta-Title</label>
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="form-group">
+						<label>Meta-Description</label>
+						<textarea type="text" class="form-control" rows="4"></textarea>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip(); 
+		});
+	</script>
+</body>
+</html>
